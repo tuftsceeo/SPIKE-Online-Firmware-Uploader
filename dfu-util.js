@@ -806,7 +806,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://raw.githubusercontent.com/tuftsceeo/SPIKE-html/main/Flipper_combi.bin')
+        fetch('https://raw.githubusercontent.com/tuftsceeo/SPIKE-html/main/Gecko_combi.bin')
           .then(response =>
           {
             if (!response.ok)
