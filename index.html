@@ -166,9 +166,24 @@
             class="image-3" />
             <h1 class="platform-heading yellow-bg">Tufts CEEO</h1>
             <h1 class="platform-heading yellow-bg">SPIKE Firmware</h1></div>
-        <p class="hero_text">Test Tufts CEEO SPIKE Firmware is MicroPython for SPIKE with DocStrings which adds on-device documentation. This allows the hub to host it&#x27;s own SPIKE Python documentation within the SPIKE Python functions. Documentation will be embedded on the
-            hub. Tufts CEEO added this to allow external programs, like ChatGPT, to query the hub and read the most recently updated documentation without needing to be pre-trained or continually updated. It also allows someone without access to LEGO
-            Education&#x27;s official documentation to interact directly with the hub for documentation. Connect SPIKE Prime hub by USB to install.</p>
+        <p class="hero_text">Tufts CEEO has developed a custom firmware for SPIKE Prime Hub and SPIKE Essential Hub that enable UART and I<sup>2</sup>C communication (as well as individual digital pin control) via the SPIKE Ports, while maintaining all original SPIKE functionality.  This allows SPIKE Hubs to communicate with a wide variety of external devices (breadboards, microprocessors, and other third-party electronic hardware).</p>
+	<p class="hero_text"><b></b>Installation Instructions (via Hub's bootloader mode):</b>
+	<ul>
+		<li>Place the Hub in bootloader mode:</li>
+			<ul>
+				<li>Disconnect the USB cable.</li>
+				<li>Turn off the Hub.</li>
+				<li>Press and hold the Bluetooth button (SPIKE Prime) or power button (SPIKE Essential).</li>
+				<li>Connect the USB cable (to both the Hub and your computer).</li>
+				<li>Wait for the Bluetooth light to start blinking pink-green-blue-off (SPIKE Prime) or wait for the status light to start blinking light purple (SPIKE Essential).</li>
+				<li>Release the button; Hub is now in bootloader mode.</li>
+			</ul>
+		<li>Select the Connect button below, and choose the Hub (Hub in DFU Mode) from selector menu.</li>
+		<li>Once connected, pick which version of firmware (SPIKE Prime or SPIKE Essential) to install</li>
+		<li>Wait for installation process to complete; if there is an error, restart/retry all steps.
+</li>
+	</ul>
+    	</p>
     
 	
 			<div style="width: 400px; height: 100px; align-items: center;">
