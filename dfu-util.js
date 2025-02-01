@@ -478,14 +478,7 @@ let firmwareFile2;
 
         // Display basic USB information
         statusDisplay.textContent = '';
-	connectButton.innerHTML = `
-	    <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_disconnect-white.png" class="connect-image" />
-	    <div class="connect_button_text">Disconnect</div>
-	`;
-	connectButton.style.backgroundColor = "#FF5733"; // Red background when connected
-	connectButton.style.color = "#ffffff"; // White text for contrast
-	connectButton.style.padding = "10px 20px"; // Maintain consistent padding
-	connectButton.style.borderRadius = "8px"; // Rounded button corners
+        connectButton.textContent = 'Disconnect';
         infoDisplay.textContent = (
           "Name: " + device.device_.productName + "\n" +
           "MFG: " + device.device_.manufacturerName + "\n" +
