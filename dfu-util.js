@@ -358,7 +358,7 @@ function onDisconnect(reason)
     // Restore Webflow-styled button
     connectButton.className = "link-block---no-underline connect-link-block w-inline-block"; // Reset to Webflow's default class
     connectButton.innerHTML = `
-        <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png" class="connect-image" />
+        <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/67a3a7791578ba2376969488_connect-p-500.png" class="connect-image" />
         <div class="connect_button_text">Connect</div>
     `;
 
@@ -489,8 +489,8 @@ function onDisconnect(reason)
         statusDisplay.textContent = '';
 	connectButton.className = "connect-button"; // Reset to Webflow's default class
     	connectButton.innerHTML = `
-        	<img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_disconnect.png" class="connect-image" />
-       		 <div class="connect_button_text brown">DISCONNECT</div>
+        	<img src="https://assets-global.website-files.com/65a14e52729c40368a865056/67a3a7794ea69220f218ce25_disconnect-p-500.png" class="connect-image" />
+       		 <div class="disconnect_button_text">DISCONNECT</div>
     `;
         infoDisplay.textContent = (
           "Name: " + device.device_.productName + "\n" +
