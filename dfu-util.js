@@ -347,22 +347,31 @@ let firmwareFile2;
 
       //let device;
 
-      function onDisconnect(reason)
-      {
-        if (reason)
-        {
-          statusDisplay.textContent = reason;
-        }
 
-        connectButton.textContent = "Connect";
-        infoDisplay.textContent = "";
-        dfuDisplay.textContent = "";
-        detachButton.disabled = true;
-        uploadButton.disabled = true;
-        downloadButton.disabled = true;
-		downloadButton2.disabled = true;
-        firmwareFileField.disabled = true;
-      }
+function onDisconnect(reason)
+{
+    if (reason)
+    {
+        statusDisplay.textContent = reason;
+    }
+
+    // Restore Webflow-styled button
+    connectButton.className = "connect-button"; // Reset to Webflow's default class
+    connectButton.innerHTML = `
+        <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png" class="connect-image" />
+        <div class="connect_button_text">Connect</div>
+    `;
+
+    // Reset other UI elements
+    infoDisplay.textContent = "";
+    dfuDisplay.textContent = "";
+    detachButton.disabled = true;
+    uploadButton.disabled = true;
+    downloadButton.disabled = true;
+    downloadButton2.disabled = true;
+    firmwareFileField.disabled = true;
+}
+
 
       function onUnexpectedDisconnect(event)
       {
