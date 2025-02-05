@@ -487,7 +487,7 @@ function onDisconnect(reason)
 
         // Display basic USB information
         statusDisplay.textContent = '';
-	connectButton.className = "connect-button"; // Reset to Webflow's default class
+	connectButton.className = "link-block---no-underline disconnect-link-block w-inline-block"; 
     	connectButton.innerHTML = `
         	<img src="https://assets-global.website-files.com/65a14e52729c40368a865056/67a3a7794ea69220f218ce25_disconnect-p-500.png" class="connect-image" />
        		 <div class="disconnect_button_text">DISCONNECT</div>
