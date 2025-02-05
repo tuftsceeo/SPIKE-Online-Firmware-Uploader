@@ -354,12 +354,7 @@ let firmwareFile2;
           statusDisplay.textContent = reason;
         }
 
-	connectButton.classList.remove("connected"); // Remove the "Disconnect" class
-	connectButton.classList.add("connect-button"); // Restore the Webflow class
-	connectButton.innerHTML = `
-	    <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png" class="connect-image" />
-	    <div class="connect_button_text">Connect</div>
-	`;
+        connectButton.textContent = "Connect";
         infoDisplay.textContent = "";
         dfuDisplay.textContent = "";
         detachButton.disabled = true;
@@ -369,8 +364,6 @@ let firmwareFile2;
         firmwareFileField.disabled = true;
       }
 
-
-	    
       function onUnexpectedDisconnect(event)
       {
         if (device !== null && device.device_ !== null)
