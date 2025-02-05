@@ -356,7 +356,7 @@ function onDisconnect(reason)
     }
 
     // Restore Webflow-styled button
-    connectButton.className = "connect-button"; // Reset to Webflow's default class
+    connectButton.className = "link-block---no-underline connect-link-block w-inline-block"; // Reset to Webflow's default class
     connectButton.innerHTML = `
         <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png" class="connect-image" />
         <div class="connect_button_text">Connect</div>
